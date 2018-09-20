@@ -1,0 +1,235 @@
+body{
+  font-family: "Segoe UI";
+  border-top: 7.5px solid #a292b3;
+
+}
+
+nav{
+  margin: 10px 0;
+}
+nav .nav-item{
+  font-size: 19px;
+  padding-left: 70px;
+  white-space: nowrap;
+}
+nav .nav-item img{
+  padding-right: 11px;
+}
+.mySlides {
+  display:none;
+}
+.w3-button{
+  padding:0 6px 1px;
+  font-size:50px;
+  color:#fff;
+  outline: none;
+}
+.w3-button:hover{
+  outline: none;
+}
+.w3-display-middle p{
+  text-align:center;
+  color:#fff;
+}
+.w3-display-middle p:first-child{
+  font-size:117px;
+}
+.w3-display-middle p:last-child{
+  font-size:31px;
+  white-space: nowrap;
+}
+.main-content{
+  margin-bottom: 40px;
+}
+.text-content{
+  text-align: center;
+  white-space: normal;
+  font-size: 23px;
+  margin: 0 10px;
+  border-top: 2px solid #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
+  font-style: italic;
+}
+.text-content text{
+  color:#82699d;
+  font-weight: bold;
+}
+.circle{
+  float:left;
+  padding:30px;
+}
+.circle img{
+
+  min-width:30%;
+}
+.info{
+  float:left;
+  width: 65%;
+  padding-top:70px;
+  line-height: 2;
+}
+.info p,a{
+  color:#8d8d8d;
+}
+.info p{
+  padding-left: 5px;
+}
+.info a{
+  float: right;
+}
+.info a i{
+  font-style: italic;
+  padding-left:3px;
+}
+
+.title {
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+  clear:left;
+  font-size: 23px;
+}
+.title:before,
+.title:after {
+  content: '';
+
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+  ** благодаря этому линия заполнит все свободное пространство
+  ** слева и справа от текста
+  */
+  width: 100%;
+  height: 1px;
+  background: #e2e2e2;
+
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+  ** благодаря этому создается нужный отступ между линиями и текстом
+  */
+  border: solid #FFF;
+  border-width: 0 10px;
+}
+.title:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает слева от текста
+  */
+  margin-left: -100%;
+}
+.title:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает справа от текста
+  */
+  margin-right: -100%;
+}
+.support-content{
+  margin:40px 0 60px 0;
+}
+.support{
+  background: #f5f5f5;
+  text-align: center;
+  height:65px;
+  border:1px solid #e4e4e4;
+}
+.support img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+footer{
+  border-bottom: 7.5px solid #a292b3;
+  background: #e5e5e5;
+  display: block;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+footer p{
+  font-weight: lighter;
+  font-size: 15px;
+  float:left;
+  padding:25px 0 10px;
+}
+footer img{
+  float:right;
+  padding:20px 10px;
+
+}
+@media screen and (max-width: 1200px){
+  nav .nav-item{
+    padding-left: 50px;
+  }
+  .info{
+    max-width: 60%;
+  }
+
+}
+@media screen and (max-width: 990px){
+  .circle{
+    padding-top:70px;
+  }
+  .info{
+    max-width: 40%;
+  }
+
+}
+@media screen and (max-width: 766px){
+
+  .info{
+    padding-top:0;
+  }
+  .info,.circle{
+    min-width:100%;
+    text-align: center;
+    padding:0;
+  }
+  .circle{
+    padding-top:30px;
+  }
+  .w3-display-middle p:first-child{
+    font-size:50px;
+  }
+  .w3-display-middle p:last-child{
+    font-size:15px;
+  }
+  @media screen and (max-width: 425px){
+    footer img{
+      float:right;
+      padding:20px 5px;
+
+    }
+  }
+  @media screen and (max-width: 375px){
+    .title{
+      text-align: center;
+    }
+    .title:after {
+      height:0;
+    }
+    .title:before {
+      /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+      ** благодаря этому линия встает слева от текста
+      */
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 355px){
+    footer p{
+      padding-top:37px;
+    }
+    footer img{
+      padding:10px 10px;
+
+    }
+    nav a{
+      width:180px;
+    }
+  }
+
+}
